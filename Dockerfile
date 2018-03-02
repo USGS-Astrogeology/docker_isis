@@ -23,6 +23,7 @@ RUN dnf install -y libXtst
 RUN dnf install -y libxslt
 RUN dnf install -y bzip2
 RUN dnf install -y alsa-lib.x86_64
+RUN dnf install -y pcre
 
 RUN mkdir -p /workspace/ISIS3_cmake && mkdir -p /workspace/ISIS3_cmake@tmp
 
