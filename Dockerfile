@@ -8,8 +8,8 @@ RUN dnf install -y wget bzip2 ca-certificates
 RUN dnf install -y xorg-x11-xauth xterm
 RUN dnf install -y libicu
 
-RUN wget https://rpmfind.net/linux/opensuse/ports/update/leap/42.3/oss/aarch64/libpcre16-0-8.39-11.1.aarch64.rpm
-RUN rpm libpcre16
+RUN wget http://dl.fedoraproject.org/pub/fedora/linux/updates/25/x86_64/Packages/p/pcre-utf16-8.41-3.fc25.x86_64.rpm
+RUN rpm -ivh pcre-utf16-8.41-3.fc25.x86_64.rpm
 
 RUN mkdir -p /workspace/ISIS3_cmake && mkdir -p /workspace/ISIS3_cmake@tmp
 
