@@ -3,7 +3,7 @@ FROM fedora:25
 RUN dnf install -y gcc-c++
 RUN dnf install -y ninja-build
 RUN dnf install -y cmake
-RUN dnf install -y wget bzip2 ca-certificates
+RUN dnf install -y wget
 
 # install pre-reqs
 RUN dnf install -y gcc-gfortran
