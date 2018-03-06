@@ -29,11 +29,8 @@ RUN dnf install -y zlib-devel.x86_64
 RUN wget http://download.icu-project.org/files/icu4c/52.1/icu4c-52_1-RHEL6-x64.tgz
 RUN tar -xvf icu4c-52_1-RHEL6-x64.tgz -C /
 
-# install libpng16
-RUN wget https://sourceforge.net/projects/libpng/files/libpng16/1.6.34/libpng-1.6.34.tar.xz/download
-RUN tar -xvf download
-RUN ./libpng-1.6.34/configure
-RUN make install
+RUN wget http://dl.fedoraproject.org/pub/fedora/linux/updates/25/x86_64/Packages/p/pcre-utf16-8.41-3.fc25.x86_64.rpm
+RUN rpm -ivh pcre-utf16-8.41-3.fc25.x86_64.rpm
 
 RUN mkdir -p /workspace/ISIS3_cmake && mkdir -p /workspace/ISIS3_cmake@tmp
 
