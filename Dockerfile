@@ -15,6 +15,7 @@ RUN dnf install -y wget
 RUN dnf install -y libjpeg
 RUN dnf install -y make
 RUN dnf install -y mesa-libGL
+RUN dnf install -y mesa-libGLU-devel
 RUN dnf install -y libXi
 RUN dnf install -y libXcursor
 RUN dnf install -y libXcomposite
