@@ -7,6 +7,7 @@ RUN dnf install -y wget
 
 # install pre-reqs
 RUN dnf install -y gcc-gfortran
+RUN dnf install -y blas-devel
 RUN dnf install -y boost-devel
 RUN dnf install -y rsync
 RUN dnf install -y xorg-x11-xauth xterm
@@ -16,6 +17,7 @@ RUN dnf install -y libjpeg
 RUN dnf install -y make
 RUN dnf install -y mesa-libGL
 RUN dnf install -y mesa-libGLU-devel
+RUN dnf install -y mesa-dri-drivers
 RUN dnf install -y libXi
 RUN dnf install -y libXcursor
 RUN dnf install -y libXcomposite
