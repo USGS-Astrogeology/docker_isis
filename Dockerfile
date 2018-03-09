@@ -35,6 +35,6 @@ RUN tar -xvf icu4c-52_1-RHEL6-x64.tgz -C /
 RUN wget http://dl.fedoraproject.org/pub/fedora/linux/updates/25/x86_64/Packages/p/pcre-utf16-8.41-3.fc25.x86_64.rpm
 RUN rpm -ivh pcre-utf16-8.41-3.fc25.x86_64.rpm
 
-RUN mkdir -p /workspace/ISIS3_cmake && mkdir -p /workspace/ISIS3_cmake@tmp
+RUN mkdir -p /workspace/ISIS3_cmake /workspace/ISIS3_cmake@tmp ./build ./install
 
 ENTRYPOINT [ "/bin/bash", "-c", "--" ]
