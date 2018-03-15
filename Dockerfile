@@ -2,7 +2,7 @@ FROM fedora:25
 
 RUN dnf install -y gcc-c++
 RUN dnf install -y ninja-build
-RUM dnf install -y make
+RUN dnf install -y make
 RUN dnf install -y cmake
 RUN dnf install -y wget
 
