@@ -1,10 +1,7 @@
 FROM fedora:25
 
 RUN dnf install -y gcc-c++
-RUN dnf install -y ninja-build
-RUN dnf install -y make
-RUN dnf install -y cmake
-RUN dnf install -y wget
+RUN dnf install -y wget bzip2 ca-certificates
 
 RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.3.27-Linux-x86_64.sh -O ~/miniconda.sh && \
