@@ -10,8 +10,8 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
 
 ENV PATH /opt/conda/bin:$PATH
 RUN conda config --add channels conda-forge && \
-    conda install anaconda-client && \
-    conda env create usgs-astrogeology/isisdeps && \
+    conda config --add channels conda-forge && \
+    conda config --add channels krodriguez && \
     rm -rf /opt/conda/pkgs/*
 ENV PATH /opt/conda/envs/isisdeps/bin:$PATH
 
