@@ -9,10 +9,6 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     rm ~/miniconda.sh 
 
 ENV PATH /opt/conda/bin:$PATH
-RUN conda config --add channels conda-forge && \
-    conda config --add channels conda-forge && \
-    conda config --add channels krodriguez && \
-    rm -rf /opt/conda/pkgs/*
 ENV PATH /opt/conda/envs/isisdeps/bin:$PATH
 
 RUN mkdir -p /workspace/ISIS3_cmake /workspace/ISIS3_cmake@tmp ./build ./install
