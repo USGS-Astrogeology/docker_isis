@@ -9,6 +9,6 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     rm ~/miniconda.sh 
 ENV PATH /opt/conda/bin:$PATH
 
-RUN mkdir -p /workspace/ISIS3 /workspace/ISIS3@tmp ./build ./install
+RUN mkdir -p /workspace/ISIS3_cmake /workspace/ISIS3_cmake@tmp ./build ./install
 
 ENTRYPOINT [ "/bin/bash", "-c", "--" ]
