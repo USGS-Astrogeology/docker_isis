@@ -15,4 +15,4 @@ ENV PATH /opt/conda/bin:$PATH
 
 RUN mkdir -p /workspace/ISIS3_cmake /workspace/ISIS3_cmake@tmp ./build ./install
 
-ENTRYPOINT [ "/bin/bash", "-c", "conda activate" ]
+ENTRYPOINT [ "/bin/bash", "-c", "--" ]
