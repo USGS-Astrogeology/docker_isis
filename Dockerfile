@@ -2,6 +2,7 @@ FROM fedora:25
 
 RUN dnf install -y gcc-c++
 RUN dnf install -y wget bzip2 ca-certificates
+RUN dnf install -y which
 
 RUN dnf install -y xorg-x11-apps
 RUN dnf install -y mesa-libGL
